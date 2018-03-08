@@ -670,10 +670,17 @@ a {
         height: 250px;
         border-radius: 25px;
     }
+    .video-left a {
+        width: 80px;
+        height: 80px;
+    }
     .video-left>img {
         left: 0;
         width: calc(100% - 8px);
         border-radius: 22px;
+    }
+    .cards-right {
+        margin-left: 0;
     }
 }
 /* /IMPLANTES HERO */
@@ -785,6 +792,12 @@ h2 {
 }
 .landing1 .heroCard h3 {
     color: var(--blueText);
+}
+
+@media (max-width: 767px) {
+    .landing1 .heroCard {
+        margin: 30px 0;
+    }
 }
 /* /LANDING1 HERO */
 
