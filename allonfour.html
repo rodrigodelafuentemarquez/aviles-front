@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="landing1">
     <!-- NAV -->
     <nav class="navbar sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="/">
@@ -81,6 +81,142 @@
         </div>
     </nav>
     <!-- /NAV -->
+
+    <!-- LANDING1 HERO -->
+    <div class="page-title">
+        <h1>All on Four</h1>
+        <h2>Restauración dental completa en un solo día</h2>
+    </div>
+    <div class="container-fluid heroCard--container">
+        <div class="row">
+            <div class="col-md-4 heroCard">
+                <img src="img/img.jpg" alt="All on Four" width="100%">
+                <h3>Toda la boca</h3>
+                <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
+                <button class="btn btn--white" data-target="#modal_1" data-toggle="modal">
+                    <i class="fa fa-plus"></i> Más detalles</button>
+            </div>
+            <div class="col-md-4 heroCard">
+                <img src="img/img.jpg" alt="All on Four" width="100%">
+                <h3>Toda la boca</h3>
+                <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
+                <button class="btn btn--white" data-target="#modal_1" data-toggle="modal">
+                    <i class="fa fa-plus"></i> Más detalles</button>
+            </div>
+            <div class="col-md-4 heroCard">
+                <img src="img/img.jpg" alt="All on Four" width="100%">
+                <h3>Toda la boca</h3>
+                <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
+                <button class="btn btn--white" data-target="#modal_1" data-toggle="modal">
+                    <i class="fa fa-plus"></i> Más detalles</button>
+            </div>
+        </div>
+    </div>
+    <!-- /LANDING1 HERO -->
+
+    <!-- DOCTOR -->
+    <div class="container-fluid my-5" style="background: #9e9e9e;">
+        <div class="row">
+            <div class="col-md-7 d-flex align-items-center justify-content-center">
+                <div class="col-md-8 mx-auto text-center">
+                    <h3>Dr Pablo Avilés</h3>
+                    <p>Un tratamiento de vanguardia aplicado por uno de los profesionales más reconocidos del panorama dental internacional</p>
+                    <a href="#" class="btn btn--blue">
+                        <i class="fa fa-plus"></i> Descubre más</a>
+                </div>
+            </div>
+            <div class="col-md-5 py-0">
+                <img src="img/img.jpg" alt="Doctor Pablo Avilés" width="100%">
+            </div>
+        </div>
+    </div>
+    <!-- /DOCTOR -->
+
+    <!-- CASOS -->
+    <div class="col-md-8 mx-auto my-5 text-center">
+        <h2>Casos como el tuyo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus.</p>
+    </div>
+    <div class="container-fluid tipos">
+        <div class="row">
+            <div class="col-md-4 py-4">
+                <div class="casosCard" data-target="#" data-toggle="modal">
+                    <div class="casosCard--bg__img" style="background: url(img/img.jpg) center center / cover;"></div>
+                    <div class="casosCard--bg"></div>
+                    <a href="#">
+                        <img src="img/playbutton.png" width="100%">
+                    </a>
+                    <div class="casosCard--text">
+                        <h4>Caso de éxito en rehabilitación dental completa</h4>
+                        <hr>
+                        <p>
+                            <small>Julia Rodríguez</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-4">
+                <div class="casosCard" data-target="#" data-toggle="modal">
+                    <div class="casosCard--bg__img" style="background: url(img/img.jpg) center center / cover;"></div>
+                    <div class="casosCard--bg"></div>
+                    <a href="#">
+                        <img src="img/playbutton.png" width="100%">
+                    </a>
+                    <div class="casosCard--text">
+                        <h4>Caso de éxito en rehabilitación dental completa</h4>
+                        <hr>
+                        <p>
+                            <small>Julia Rodríguez</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-4">
+                <div class="casosCard" data-target="#" data-toggle="modal">
+                    <div class="casosCard--bg__img" style="background: url(img/img.jpg) center center / cover;"></div>
+                    <div class="casosCard--bg"></div>
+                    <a href="#">
+                        <img src="img/playbutton.png" width="100%">
+                    </a>
+                    <div class="casosCard--text">
+                        <h4>Caso de éxito en rehabilitación dental completa</h4>
+                        <hr>
+                        <p>
+                            <small>Julia Rodríguez</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /CASOS -->
+
+    <!-- FORM -->
+    <div>
+        <div class="col-md-8 mx-auto py-5 text-center">
+            <h2>¿Hablamos?</h2>
+            <p>Déjanos tus datos y te atenderemos de forma personalizada lo antes posible</p>
+        </div>
+        <form onsubmit="$('#gracias').modal('show');" action="https://docs.google.com/forms/d/e/1FAIpQLSeSZ3UOF-cwrTozJJBN8p_Ucl2Sb_nLa6u0AT_bqc9XhCLwQg/formResponse"
+            target="no-target">
+            <div class="row contactform pb-4">
+                <div class="col-md-6 col-12">
+                    <input name="entry.1199946029" type="text" id="nombre" autocomplete="given-name" required placeholder="Nombre" aria-label="Nombre">
+                    <input name="entry.249173692" type="text" id="apellidos" autocomplete="family-name" required placeholder="Apellidos" aria-label="Apellidos">
+                    <input name="emailAddress" type="email" id="email" autocomplete="email" required placeholder="Email" aria-label="Email">
+                </div>
+                <div class="col-md-6 col-12">
+                    <input name="entry.659781189" type="tel" id="telefono" autocomplete="tel" placeholder="Teléfono" aria-label="Teléfono">
+                    <textarea class="descrip" rows="4" name="entry.1197895751" id="descripcion" placeholder="Descripción" aria-label="Descripción"></textarea>
+                    <p>Enviar este formulario supone la aceptación de nuestra
+                        <a href="#">política de privacidad</a>
+                    </p>
+                    <button type="submit" class="btn btn--blue float-right">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /FORM -->
 
     <!-- Bootstrap JS, Popper.js y jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
