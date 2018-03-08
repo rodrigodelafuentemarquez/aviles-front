@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- NAV HOME -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <a class="navbar-brand" href="/">
+            <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tratamientos 1</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tratamientos 2
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tratamiento 1</a>
+                        <a class="dropdown-item" href="#">Tratamiento 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Tratamiento 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">La clínica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">ENG</a>
+                        <a class="dropdown-item" href="#">SPA</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav--phone" href="tel: #">999 32 99 32</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /NAV HOME -->
+
+    <!-- PABLO HERO -->
+    <div class="hero d-flex align-items-center">
+        <div class="col-md-9 heroContent">
+            <p class="h1">¿En qué podemos ayudarte?</p>
+            <p class="h2">Usa el buscador para consultar<br> cualquier duda que tengas</p>
+            <form class="form-inline my-2 search-bar">
+                <div class="search-bar--group">
+                    <input class="form-control" type="search" aria-label="Search">
+                    <button class="btn my-2" type="submit"><i class="fas fa-search"></i> Buscar</button>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-md-3 heroCard" data-target="#" data-toggle="modal">
+                    <h3>Digital Dental Clinic</h3>
+                    <button class="btn btn-large btn-expend"><i class="fa fa-plus"></i> Más información</button>
+                </div>
+                <div class="col-md-3 heroCard" data-target="#" data-toggle="modal">
+                    <h3>Digital Dental Clinic</h3>
+                    <button class="btn btn-large btn-expend"><i class="fa fa-plus"></i> Más información</button>
+                </div>
+                <div class="col-md-3 heroCard" data-target="#" data-toggle="modal">
+                    <h3>Digital Dental Clinic</h3>
+                    <button class="btn btn-large btn-expend"><i class="fa fa-plus"></i> Más información</button>
+                </div>
+            </div>
+        </div>
+        <div class="heroVideo col-md-5">
+            <img src="img/img.jpg" alt="Doctor Pablo Avilés" width="100%">
+            <div class="heroVideo--content">
+                <a href="#">
+                    <img src="img/playbutton.png">
+                </a>
+                <h4>Digital Dental CLinic</h4>
+                <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt rutrum.</small></p>
+            </div>
+        </div>
+    </div>
+    <!-- /PABLO HERO --> 
+
+    <!-- MINI TEXT -->
+    <div class="col-md-8 mx-auto my-5 text-center">
+        <h2>Confianza y experiencia</h2>
+        <p>Más de 12000 implantes colocados</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec quam quis tortor efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue dapibus, orci metus tincidunt tellus, vulputate porttitor risus odio a ex.</p>
+        <br>
+        <a href="#" class="btn btn--blue">Texto de botón</a>
+        <a href="#" class="btn btn--blue"><i class="fa fa-plus"></i> Botón</a>
+    </div>
+    <!-- /MINI TEXT -->
+
+    <!-- GRID -->
+    <div class="col-md-9 mx-auto grid-container">
+        <div class="item1">
+            <img src="img/img.jpg">
+            <div class="item--content">
+                <div>
+                    <p>Dentistas</p>
+                    <a href="#" class="btn"><small>Ver más</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="img/img.jpg">
+            <div class="item--content">
+                <div>
+                    <p>Dentistas</p>
+                    <a href="#" class="btn"><small>Ver más</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <img src="img/img.jpg">
+            <div class="item--content">
+                <div>
+                    <p>Dentistas</p>
+                    <a href="#" class="btn"><small>Ver más</small></a>
+                </div>
+            </div>
+        </div>  
+        <div class="item4">
+            <div class="item--bg__img" style="background: url(img/img.jpg) center center / cover;"></div>
+            <div class="item--bg"></div>
+            <a href="#">
+                <img src="img/playbutton.png">
+            </a>
+            <div class="item--text">
+                <h4>Caso de éxito en rehabilitación dental completa</h4>
+                <hr>
+                <p><small>Julia Rodríguez</small></p>
+            </div>
+        </div>
+        <div class="item5">
+            <div class="item--bg__img" style="background: url(img/img.jpg) center center / cover;"></div>
+            <div class="item--bg"></div>
+            <div class="item--text">
+                <h4>Caso de éxito en rehabilitación dental completa</h4>
+                <p><small>Julia Rodríguez</small></p>
+            </div>
+        </div>
+        <div class="item6">
+            <div class="item--bg"></div>
+            <img src="https://dentalmedicalgroup.com/statics/2016/10/logo_DMG.png" alt="Dental Medical Group" width="80%">
+        </div>
+    </div>
+    <!-- /GRID -->
+
+    <!-- Bootstrap JS, Popper.js y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
