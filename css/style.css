@@ -222,6 +222,24 @@ a {
     border-radius: 500px;
     color: var(--white);
     margin: 0 15px;
+    transition: all 0.1s ease-in-out;
+}
+.btn--blue:hover,
+.btn--blue:focus,
+.btn--blue:active {
+    background: var(--gradient__blue) !important;
+    color: var(--white) !important;
+    box-shadow: 0 2px 10px var(--blue2);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-perspective: 1000;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: auto;
+    transition: all 0.1s ease-in-out;
 }
 
 .btn--white {
@@ -230,8 +248,26 @@ a {
     color: var(--plusButton);
     box-shadow: inset 0 0 10px var(--plusButton);
     border: none;
+    transition: all 0.1s ease-in-out;
 }
-
+.btn--white:hover,
+.btn--white:focus,
+.btn--white:active {
+    background: var(--white) !important;
+    color: var(--plusButton) !important;
+    box-shadow: inset 0 0 10px var(--plusButton),
+    0 2px 10px var(--plusButton);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-perspective: 1000;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: auto;
+    transition: all 0.1s ease-in-out;
+}
 
 /* NAV */
 .nav--phone {
@@ -287,6 +323,17 @@ a {
     position: absolute;
     height: 100vh;
     right: 0;
+    padding: 0;
+    mask-image: url(../img/lagrima.svg);
+    -webkit-mask-image: url(../img/lagrima.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.home .heroVideo:hover {
+    mask-size: 110%;
+    -webkit-mask-size: 110%;
+    transition: all 0.5s;
 }
 
 .home .heroVideo--content {
@@ -308,6 +355,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 @media (max-width: 767px) {
@@ -338,7 +386,12 @@ a {
 
 /* + BUTTON */
 .btn-expend--container {
-    
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    text-align: center;
 }
 
 .btn-expend {
@@ -353,11 +406,7 @@ a {
     border: none;
     border-radius: 500px;
     transition: max-width .3s ease;
-    bottom: -20px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -20px;
+    margin: 0 auto;
 }
 .btn-expend.btn-xs {
     max-width: 12px;
@@ -648,6 +697,13 @@ a {
 
 .cards-right > div {
     margin: 25px 0;
+    transition: all 0.2s ease-in-out;
+}
+.cards-right>div:hover,
+.cards-right>div:focus,
+.cards-right>div:active {
+    margin-left: -50px;
+    transition: all 0.2s ease-in-out;
 }
 
 .cards-right--img {
@@ -695,6 +751,23 @@ a {
     margin: 0 auto;
 }
 
+.tipos>div>div:hover .tiposCard,
+.tipos>div>div:focus .tiposCard,
+.tipos>div>div:active .tiposCard {
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--blue2);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-perspective: 1000;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: auto;
+    transition: all 0.2s ease-in-out;
+}
+
 .tiposCard {
     border-radius: 25px;
     padding: 15px;
@@ -707,6 +780,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in-out;
 }
 
 .tiposCard h3 {
