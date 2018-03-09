@@ -328,6 +328,8 @@ a {
     -webkit-mask-image: url(../img/lagrima.svg);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+    mask-position: top right;
+    -webkit-mask-position: top right;
     transition: all 0.5s;
 }
 
