@@ -282,7 +282,7 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
-    top: -56px;
+    top: 0;
 }
 
 .home .heroContent {
@@ -330,9 +330,10 @@ a {
     -webkit-mask-repeat: no-repeat;
     transition: all 0.5s;
 }
-.home .heroVideo:hover {
-    mask-size: 110%;
-    -webkit-mask-size: 110%;
+
+.home .heroVideo--content a:hover .heroVideo {
+    mask-size: 50%;
+    -webkit-mask-size: 50%;
     transition: all 0.5s;
 }
 
@@ -351,7 +352,7 @@ a {
     width: 100px !important;
 }
 
-.home .heroVideo img {
+.home .heroVideo > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
