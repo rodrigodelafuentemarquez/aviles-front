@@ -1225,7 +1225,7 @@ h2 {
 /* POST-TITLE */
 
 .post-title {
-    margin: 7rem auto 0px;
+    margin: 4rem auto 0px;
     text-align: center;
     background: var(--blue);
     min-height: 350px; 
@@ -1340,10 +1340,6 @@ h2 {
 }
 
 @media (max-width: 767px) {
-    .post-title {
-        margin: 4rem auto 0px;
-    }
-
     .social--sticky {
         display: none;
     }
