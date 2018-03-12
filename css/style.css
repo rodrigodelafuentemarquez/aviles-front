@@ -1143,7 +1143,6 @@ h2 {
 }
 
 .featuredPost {
-    position: fixed;
     border-radius: 25px;
     padding: 15px;
     color: var(--white);
@@ -1205,6 +1204,20 @@ h2 {
     background: var(--gradient__blue);
     opacity: 0.8;
     border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+    .featuredPost--container {
+        position: relative;
+    }
+
+    .blogPost {
+        margin-bottom: 40px;
+    }
+
+    .blogPost--img {
+        margin-bottom: 10px;
+    }
 }
 
 /* /BLOG GRID */
@@ -1303,7 +1316,7 @@ h2 {
 }
 
 .post-content {
-    width: 800px;
+    max-width: 800px;
     float: right;
 }
 
@@ -1324,6 +1337,32 @@ h2 {
 
 .social-post a {
     margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+    .post-title {
+        margin: 4rem auto 0px;
+    }
+
+    .social--sticky {
+        display: none;
+    }
+
+    .post-content {
+        padding: 0 15px
+    }
+
+    .post-content img {
+        width: 100%;
+        margin: 20px 0;
+        margin-left: 15px;
+    }
+
+    .featuredImg {
+        margin-top: -80px;
+        padding-left: 50px;
+        padding-right: 0;
+    }
 }
 
 /* /POST WRAPPER */
@@ -1347,6 +1386,12 @@ h2 {
     object-fit: cover;
     border-radius: 25px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .related-posts > div > div {
+        margin-bottom: 30px;
+    }
 }
 
 /* /RELATED POSTS */
