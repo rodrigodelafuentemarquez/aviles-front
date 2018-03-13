@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="landing6">
+
+        <!-- NAV -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                    alt="">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tratamientos 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Tratamientos 2
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tratamiento 1</a>
+                            <a class="dropdown-item" href="#">Tratamiento 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Tratamiento 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La clínica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">SPA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav--phone" href="tel: #">999 32 99 32</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /NAV -->
+
+        <!-- PAGE TITLE3 -->
+        <div class="container-fluid page-title3">
+            <div class="flex-row page-title3--container">
+                <div class="col-md-5">
+                    <div class="text-center">
+                        <img src="img/tooth.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="page-title3">
+                        <h1>
+                            <span>Digital dental clinic</span>
+                        </h1>
+                        <h2>Más de 20 años de innovación</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt rutrum. Quisque vitae
+                            sem nec augue finibus suscipit in at risus. Aenean nec quam quis tortor efficitur interdum commodo at turpis.</p>
+                        <a href="#" class="btn btn--blue">Descubre más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /PAGE TITLE3 -->
+
+        <!-- FORM -->
+        <div>
+            <div class="col-md-8 mx-auto py-5 text-center">
+                <h2>¿Hablamos?</h2>
+                <p>Déjanos tus datos y te atenderemos de forma personalizada lo antes posible</p>
+            </div>
+            <form onsubmit="$('#gracias').modal('show');" action="https://docs.google.com/forms/d/e/1FAIpQLSeSZ3UOF-cwrTozJJBN8p_Ucl2Sb_nLa6u0AT_bqc9XhCLwQg/formResponse"
+                target="no-target">
+                <div class="row contactform pb-4">
+                    <div class="col-md-6 col-12">
+                        <input name="entry.1199946029" type="text" id="nombre" autocomplete="given-name" required placeholder="Nombre" aria-label="Nombre">
+                        <input name="entry.249173692" type="text" id="apellidos" autocomplete="family-name" required placeholder="Apellidos" aria-label="Apellidos">
+                        <input name="emailAddress" type="email" id="email" autocomplete="email" required placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <input name="entry.659781189" type="tel" id="telefono" autocomplete="tel" placeholder="Teléfono" aria-label="Teléfono">
+                        <textarea class="descrip" rows="4" name="entry.1197895751" id="descripcion" placeholder="Descripción" aria-label="Descripción"></textarea>
+                        <p>Enviar este formulario supone la aceptación de nuestra
+                            <a href="#">política de privacidad</a>
+                        </p>
+                        <button type="submit" class="btn btn--blue float-right">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /FORM -->
+
+        <!-- Bootstrap JS, Popper.js y jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>

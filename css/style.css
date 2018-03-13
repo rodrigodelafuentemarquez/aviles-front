@@ -744,6 +744,42 @@ a {
 
 /* /PAGE TITLE */
 
+/* PAGE TITLE2 */
+
+.page-title2 {
+    max-width: 800px;
+    margin: 7rem auto 0px;
+    text-align: center;
+}
+
+.page-title2--bg {
+    height: 60vh;
+    margin-top: -320px;
+}
+
+/* /PAGE TITLE2 */
+
+/* PAGE TITLE3 */
+
+.page-title3 {
+    margin: 80px auto 40px auto;
+}
+
+.page-title3--container {
+    display: flex;
+    align-items: center;
+}
+
+.page-title3 h2 {
+    margin: 10px 0;
+}
+
+.page-title3 .btn--blue {
+    margin: 0;
+}
+
+/* /PAGE TITLE3 */
+
 /* TRATAMIENTOS GRID */
 
 .tratamientos--grid {
@@ -814,9 +850,9 @@ a {
 
 /* /TRATAMIENTOS GRID */
 
-/* IMPLANTES HERO */
+/* LANDING3 HERO */
 
-.implantesHero--content {
+.landing3Hero--content {
     display: flex;
     align-items: center;
 }
@@ -868,7 +904,7 @@ a {
 }
 
 .cards-right {
-    margin-left: -100px;
+    margin-left: -8.666667%;
 }
 
 .cards-right>div {
@@ -923,7 +959,118 @@ a {
     }
 }
 
-/* /IMPLANTES HERO */
+/* /LANDING3 HERO */
+
+/* LANDING2 HERO */
+
+.landing2Hero--content {
+    display: flex;
+    align-items: center;
+}
+
+.video-right {
+    height: 600px;
+    border-radius: 25px 0 0 25px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.landing2 .fix {
+    padding: 0px;
+    margin-right: -15px;
+}
+
+.video-right .apos-area {
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.video-right .apos-slideshow .apos-slideshow-item.apos-current {
+    opacity: 0.7
+}
+
+.video-right>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -4px;
+    margin: auto;
+    width: calc(100% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 22px 0 0 22px;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+.video-right a img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.cards-left {
+    margin-right: -8.666667%;
+}
+
+.cards-left>div {
+    margin: 25px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.cards-left>div:hover,
+.cards-left>div:focus,
+.cards-left>div:active {
+    margin-left: 25px;
+    margin-right: -25px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cards-left--img {
+    height: 160px;
+    border-radius: 25px;
+    padding: 0;
+    box-shadow: 0 2px 10px var(--plusButton);
+    overflow: hidden;
+}
+
+.cards-left--img img {
+    filter: saturate(0);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+    .landing2Hero--content {
+        display: initial;
+        align-items: initial;
+    }
+    .video-right {
+        height: 250px;
+        border-radius: 25px;
+    }
+    .video-right a {
+        width: 80px;
+        height: 80px;
+    }
+    .video-right>img {
+        right: 0;
+        width: calc(100% - 8px);
+        border-radius: 22px;
+    }
+    .cards-left {
+        margin-right: 0;
+    }
+}
+
+/* /LANDING2 HERO */
 
 /* TIPOS */
 
@@ -1428,12 +1575,64 @@ h2 {
 
 /* /BANNER1 */
 
+/* BANNER2 */ 
+
+.banner2 {
+    margin: 4rem auto;
+    text-align: center;
+    background: var(--blue2);
+    min-height: 350px;
+    position: relative;
+}
+
+.banner2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner2--content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -60px;
+    color: var(--white) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner2Card--container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: -160px;
+    margin-bottom: 100px;
+}
+
+.banner2Card {
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--white);
+    -moz-box-shadow: 0 2px 10px var(--plusButton);
+    -webkit-box-shadow: 0 2px 10px var(--plusButton);
+    box-shadow: 0 2px 10px var(--plusButton);
+}
+
+/* /BANNER2 */
+
 /* LIST1 */
 
 .list1--title {
     max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -1449,10 +1648,11 @@ h2 {
 
 .list1Card {
     text-align: center;
+    margin: 15px 0;
 }
 
 .list1Card img {
-    height: 150px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 10px;
 }
