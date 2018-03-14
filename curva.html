@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="landing6">
+
+        <!-- NAV -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                    alt="">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tratamientos 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Tratamientos 2
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tratamiento 1</a>
+                            <a class="dropdown-item" href="#">Tratamiento 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Tratamiento 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La clínica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">SPA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav--phone" href="tel: #">999 32 99 32</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /NAV -->
+
+        <style>
+            .curva_wrapper {
+                position: relative;
+            }
+            .curva_wrapper li {
+                list-style-type: none;
+            }
+            .cd-single-point {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 100%;
+                background-color: rgba(130, 206, 250, 1);
+            }
+            .cd-single-point:first-child {
+                bottom: 28%;
+                right: 85%;
+            }
+            .cd-single-point:nth-child(2) {
+                bottom: -8%;
+                right: 62%;
+            }
+            .cd-single-point:nth-child(3) {
+                bottom: 86%;
+                right: 37%;
+            }
+            .cd-single-point:nth-child(4) {
+                bottom: 61%;
+                right: 16%;
+            }
+            @media (max-width: 4000px){
+                .cd-single-point:first-child {
+                    bottom: 33%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -1%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 94%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 66%;
+                }
+            }
+            @media (max-width:2000px){
+                .cd-single-point:first-child {
+                    bottom: 32%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -4%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 90%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 65%;
+                }
+            }
+            @media (max-width: 1400px){
+                .cd-single-point:first-child {
+                    bottom: 28%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -8%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 86%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 61%;
+                }
+            }
+            @media (max-width: 992px){
+                .cd-single-point:first-child {
+                    bottom: 25%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -11%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 83%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 58%;
+                }
+            }
+            @media (max-width: 768px){
+                .cd-single-point:first-child {
+                    bottom: 21%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -15%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 79%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 54%;
+                }
+            }
+            @media (max-width: 576px){
+                .cd-single-point:first-child {
+                    bottom: 15%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -21%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 73%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 48%;
+                }
+            }
+            @media (max-width: 576px){
+                .cd-single-point:first-child {
+                    bottom: 10%;
+                }
+                .cd-single-point:nth-child(2) {
+                    bottom: -30%;
+                }
+                .cd-single-point:nth-child(3) {
+                    bottom: 60%;
+                }
+                .cd-single-point:nth-child(4) {
+                    bottom: 43%;
+                }
+            }
+            .cd-single-point::after {
+                /* this is used to create the pulse animation */
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                animation: cd-pulse 2s infinite;
+                border-radius: 100%;
+            }
+            .cd-img-replace {
+                color: white;
+            }
+
+            @keyframes cd-pulse {
+                0% {
+                    transform: scale(1);
+                    box-shadow: inset 0 0 1px 1px rgba(130, 206, 250, 0.8);
+                }
+
+                50% {
+                    box-shadow: inset 0 0 1px 1px rgba(130, 206, 250, 0.8);
+                }
+
+                100% {
+                    transform: scale(1.6);
+                    box-shadow: inset 0 0 1px 1px rgba(130, 206, 250, 0.8);
+                }
+            }
+            .cd-single-point .cd-more-info {
+                position: fixed;
+                left: -90px;
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+            }
+            .cd-single-point.is-open .cd-more-info {
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+                transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+            }
+            .cd-single-point .cd-more-info.cd-top {
+                top: 50px;
+            }
+            .cd-single-point.is-open .cd-more-info.cd-top {
+                top: -250px;
+            }
+            .cd-single-point .cd-more-info.cd-bottom {
+                top: -250px;            
+            }
+            .cd-single-point.is-open .cd-more-info.cd-bottom {
+                top: 50px;
+            }
+            @media only screen and (min-width: 600px) {
+                .cd-single-point .cd-more-info {
+                    position: absolute;
+                    width: 220px;
+                    height: 240px;
+                }
+            }
+            .cd-single-point img {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+            /*.cd-more-info:after {
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-left: 1px solid blue;
+                top: 0;
+            }*/
+
+        </style>
+        <!-- PAGE TITLE3 -->
+        <div style="margin-top: 300px;"></div>
+        <div class="container-fluid">
+            <div class="curva_wrapper">
+                <img src="img/curva.svg" />
+                <ul>
+                    <li class="cd-single-point" id="bullet1">
+                        <a class="cd-img-replace" href="#0">+</a>
+                        <div class="cd-more-info cd-top">
+                            <!-- 4 classes available: cd-top, cd-bottom, cd-left, cd-right  -->
+                            <img src="img/img.jpg" />
+                            <h3>Tooltip 1</h3>
+                            <p>Unas cuantas palabras para el subtítulo este tan chulo</p>
+                        </div>
+                    </li>
+                    <li class="cd-single-point" id="bullet2">
+                        <a class="cd-img-replace" href="#0">+</a>
+                        <div class="cd-more-info cd-top">
+                            <!-- 4 classes available: cd-top, cd-bottom, cd-left, cd-right  -->
+                            <img src="img/img.jpg" />
+                            <h3>Tooltip 2</h3>
+                            <p>Otras pocas palabras para el subtítulo este tan chulo</p>
+                        </div>
+                    </li>
+                    <li class="cd-single-point" id="bullet3">
+                        <a class="cd-img-replace" href="#0">+</a>
+                        <div class="cd-more-info cd-bottom">
+                            <!-- 4 classes available: cd-top, cd-bottom, cd-left, cd-right  -->
+                            <img src="img/img.jpg" />
+                            <h3>Tooltip 3</h3>
+                            <p>Más palabras para el subtítulo este tan chulo</p>
+                        </div>
+                    </li>
+                    <li class="cd-single-point" id="bullet4">
+                        <a class="cd-img-replace" href="#0">+</a>
+                        <div class="cd-more-info cd-bottom">
+                            <!-- 4 classes available: cd-top, cd-bottom, cd-left, cd-right  -->
+                            <img src="img/img.jpg" />
+                            <h3>Tooltip 4</h3>
+                            <p>Las últimas palabras para el subtítulo este tan chulo</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /PAGE TITLE3 -->
+
+        <!-- Bootstrap JS, Popper.js y jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    </div>
+    <script>
+        $(".cd-single-point").click(function(){
+            $(this).toggleClass("is-open");
+        })
+
+    </script>
+</body>
+
+</html>
