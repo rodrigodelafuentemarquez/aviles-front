@@ -93,6 +93,24 @@
     </div>
     <!-- /PAGE TITLE -->
 
+    <!-- BULLET POINTS -->
+    <div class="container white-glove-banner">
+        <div class="row product-feature text-center">
+            <img alt="" height="400" src="https://cdn.shopify.com/s/files/1/0562/8913/files/WhiteGloveWeb.png?13055128877293640257">
+            <div class="feature-note left bottom">
+                <div class="indicator">
+                    <div class="plus-icon">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                <div class="feature-name">
+                    SBL engineered leather
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /BULLET POINTS -->
+
     <!-- BANNER1 -->
     <div class="banner1">
         <img src="img/img2.jpg" alt="">
@@ -114,27 +132,27 @@
     <div class="container-fluid list1--container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4 list1Card">
-                <img src="img/img.jpg" alt="" width="100%">
+                <img src="img/tooth.svg" alt="" width="100%">
                 <h3>Toda la boca</h3>
                 <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
             </div>
             <div class="col-md-4 list1Card">
-                <img src="img/img.jpg" alt="" width="100%">
+                <img src="img/tooth.svg" alt="" width="100%">
                 <h3>Toda la boca</h3>
                 <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
             </div>
             <div class="col-md-4 list1Card">
-                <img src="img/img.jpg" alt="" width="100%">
+                <img src="img/tooth.svg" alt="" width="100%">
                 <h3>Toda la boca</h3>
                 <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
             </div>
             <div class="col-md-4 list1Card">
-                <img src="img/img.jpg" alt="" width="100%">
+                <img src="img/tooth.svg" alt="" width="100%">
                 <h3>Toda la boca</h3>
                 <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
             </div>
             <div class="col-md-4 list1Card">
-                <img src="img/img.jpg" alt="" width="100%">
+                <img src="img/tooth.svg" alt="" width="100%">
                 <h3>Toda la boca</h3>
                 <p>Sin necesidad de largos procedimientos, en el mismo día puedes ver los resultados</p>
             </div>
@@ -221,6 +239,19 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-</body>
 
+    <script>
+        (function ($) {
+            "use strict";
+            $('.feature-note .plus-icon .plus').on('click', function () {
+                if ($(this).parents('.feature-note').hasClass('show-cont')) {
+                    $(this).parents('.feature-note').removeClass('show-cont')
+                } else {
+                    $(this).parents('.feature-note').addClass('show-cont')
+                }
+            });
+        })(jQuery);
+    </script>
+
+</body>
 </html>
