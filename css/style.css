@@ -752,9 +752,28 @@ a {
     text-align: center;
 }
 
-.page-title2--bg {
-    height: 60vh;
-    margin-top: -320px;
+@media (max-width: 767px) {
+    .page-title2 {
+        padding: 0 15px;
+    }
+    .page-title2--bg-mobile {
+        height: 50vh;
+        margin-top: -320px;
+        display: block;
+    }
+    .page-title2--bg-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-title2--bg-desktop {
+        height: 50vh;
+        margin-top: -320px;
+    }
+    .page-title2--bg-mobile {
+        display: none
+    }
 }
 
 /* /PAGE TITLE2 */
@@ -1637,7 +1656,7 @@ h2 {
 }
 
 .list1--container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -1659,6 +1678,12 @@ h2 {
 
 .list1Card h3 {
     color: var(--blueText);
+}
+
+@media (max-width: 767px) {
+    .list1--title {
+        padding: 0 15px;
+    }
 }
 
 /* /LIST1 */
