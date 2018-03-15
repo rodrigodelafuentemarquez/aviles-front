@@ -1561,7 +1561,7 @@ h2 {
 /* BANNER1 */
 
 .banner1 {
-    margin: 4rem auto;
+    margin: 4rem auto 0;
     text-align: center;
     background: var(--blue2);
     min-height: 350px;
@@ -1590,6 +1590,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner1--content .h2 {
+    margin: 0;
 }
 
 /* /BANNER1 */
@@ -1646,6 +1650,15 @@ h2 {
 }
 
 /* /BANNER2 */
+
+/* BANNER3 */
+
+.banner3Card--container {
+    margin-top: -160px;
+    margin-bottom: 80px;
+}
+
+/* /BANNER3 */
 
 /* LIST1 */
 
@@ -2059,6 +2072,21 @@ h2 {
 }
 
 /* /BULLET POINTS */
+
+/* TRATAMIENTOS DIVIDED */
+
+.tratamientos--divided {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .d-flex {
+        display: block !important;
+    }
+}
+
+/* /TRATAMIENTOS DIVIDED */
 
 /* BOOTSTRAP */
 
