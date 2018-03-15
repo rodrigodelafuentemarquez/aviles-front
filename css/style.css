@@ -1590,6 +1590,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .banner1--content .h2 {
