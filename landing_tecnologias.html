@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="landing1">
+
+        <!-- NAV -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                    alt="">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tratamientos 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Tratamientos 2
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tratamiento 1</a>
+                            <a class="dropdown-item" href="#">Tratamiento 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Tratamiento 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La clínica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">SPA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav--phone" href="tel: #">999 32 99 32</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /NAV -->
+
+        <!-- LANDING1 HERO -->
+        <div class="page-title">
+            <h1>Tecnología</h1>
+        </div>
+        <!-- /LANDING1 HERO -->
+
+        <style>
+            .otraCard {
+                max-height: 150px;
+                display: flex;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .otraCard .imagen {
+                flex: 2;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+            }
+
+            .otraCard img {
+                max-width: 100%;
+
+            }
+
+            .otraCard .cuerpo {
+                max-width: 100%;
+                object-fit: cover;
+                flex: 3;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: space-evenly;
+            }
+        </style>
+
+        <!-- TECNOLOGÍAS -->
+        <div class="col-md-8 mx-auto my-5 text-center">
+            <p>En nuestras clínicas contamos con las más avanzadas tecnologías para el tratamiento de enfermedades periodontales.</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_1" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Datron D5</h4>
+                            <button class="btn btn--white" data-target="#modal_1" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_2" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>TAC de baja radiación 3D</h4>
+                            <button class="btn btn--white" data-target="#modal_2" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_3" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Itero Escáner Intraorl e Invisalign</h4>
+                            <button class="btn btn--white" data-target="#modal_3" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_4" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Cerec Impresiones Digitales</h4>
+                            <button class="btn btn--white" data-target="#modal_4" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_5" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Microscopio Dental</h4>
+                            <button class="btn btn--white" data-target="#modal_5" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_6" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Esterilización</h4>
+                            <button class="btn btn--white" data-target="#modal_6" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_7" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Láser Dental</h4>
+                            <button class="btn btn--white" data-target="#modal_7" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_8" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Sonda Florida</h4>
+                            <button class="btn btn--white" data-target="#modal_8" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_9" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>OsseoCare Pro</h4>
+                            <button class="btn btn--white" data-target="#modal_9" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_10" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Integración total</h4>
+                            <button class="btn btn--white" data-target="#modal_10" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="otraCard" data-target="#modal_11" data-toggle="modal">
+                        <div class="imagen">
+                            <img src="img/img.jpg" />
+                        </div>
+                        <div class="cuerpo">
+                            <h4>Ortodoncia rápida</h4>
+                            <button class="btn btn--white" data-target="#modal_11" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z"></path>
+                                </svg>
+                                <!-- <i class="fa fa-plus"></i> -->Más detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /CASOS -->
+
+        <!-- FORM -->
+        <div>
+            <div class="col-md-8 mx-auto py-5 text-center">
+                <h2>¿Hablamos?</h2>
+                <p>Déjanos tus datos y te atenderemos de forma personalizada lo antes posible</p>
+            </div>
+            <form onsubmit="$('#gracias').modal('show');" action="https://docs.google.com/forms/d/e/1FAIpQLSeSZ3UOF-cwrTozJJBN8p_Ucl2Sb_nLa6u0AT_bqc9XhCLwQg/formResponse"
+                target="no-target">
+                <div class="row contactform pb-4">
+                    <div class="col-md-6 col-12">
+                        <input name="entry.1199946029" type="text" id="nombre" autocomplete="given-name" required placeholder="Nombre" aria-label="Nombre">
+                        <input name="entry.249173692" type="text" id="apellidos" autocomplete="family-name" required placeholder="Apellidos" aria-label="Apellidos">
+                        <input name="emailAddress" type="email" id="email" autocomplete="email" required placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <input name="entry.659781189" type="tel" id="telefono" autocomplete="tel" placeholder="Teléfono" aria-label="Teléfono">
+                        <textarea class="descrip" rows="4" name="entry.1197895751" id="descripcion" placeholder="Descripción" aria-label="Descripción"></textarea>
+                        <p>Enviar este formulario supone la aceptación de nuestra
+                            <a href="#">política de privacidad</a>
+                        </p>
+                        <button type="submit" class="btn btn--blue float-right">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /FORM -->
+
+        <div id="modal_1" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Datron D5</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 En Clínica Avilés y Román contamos con la fresadora DATRON D5. Esta máquina de última tecnología es la única en Andalucía
+                                que permite realizar en un solo día cualquier estructura para implantes dentales. Las prótesis dentales están diseñadas íntegramente
+                                por ordenador y garantizan: - Excelentes resultados a corto y largo plazo - Un nivel de ajuste prácticamente perfecto - Evitar
+                                que las tensiones que puede sufrir el hueso - Reducir de forma considerable el ataque de la placa bacteriana.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_2" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_2" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">TAC de baja radiación 3D</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 A la hora de diagnosticar al paciente es fundamental obtener unos buenos registros radiográficos. Nuestra clínica fue pionera
+                                en Málaga en la utilización del diagnóstico 3D. Hoy seguimos avanzando a la vanguardia de la tecnología, por ello disponemos
+                                de un innovador equipo de baja radiación que emite hasta 10 veces menos radiación que otros equipos.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_3" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_3" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Itero Escaner Intraoral e Invisalign</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Gracias a la unión de las más modernas tecnologías hemos conseguido los resultados más satisfactorios: el Dr. Román ha sido
+                                el primero en España y único en Málaga en utilizar el escáner intraoral para los tratamientos de ortodoncia con Invisalign
+                                consiguiendo una mejor adaptación y resultados más exactos en menos tiempo. ¡Se acabaros las náuseas y arcadas que provocaban
+                                los antiguos moldes!
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_4" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_4" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Cerec Impresiones Digitales</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 El sistema CEREC inLab permite obtener prótesis en un solo día gracias al sistema CAD/CAM para rehabilitaciones orales completas.
+                                Esta novedosa tecnología permite a los protésicos dentales diseñar y realizar puentes, coronas ocarillas de porcelana o zirconio
+                                el mismo día que se toman las imágenes con el escáner intraoral. La exactitud y precisión son sus principales ventajas.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_5" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_5" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Microscopio Dental</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Esta herramienta óptica permite ver más y mejor el campo operatorio consiguiendo: Aumentar la precisión Reducir el tiempo
+                                del proceso El microscopio dental lleva una cámara de vídeo integrada y el paciente puede visualizar su intervención en directo
+                                si así lo desea.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_6" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_6" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Esterilización</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 La seguridad es una prioridad: realizamos la limpieza, desinfección y esterilización de nuestros materiales de trabajo con
+                                el equipo más seguro del mercado, el esterilizador LISA a vapor de Tipo B. en nuestra clínica seguimos minuciosamente un
+                                protocolo que nos permite garantizar la seguridad que ofrecemos a todos nuestros pacientes: Limpieza, desinfección y esterilización:
+                                Limpieza -> Desinfección -> Secado -> Sellado -> Esterilización -> Trazabilidad ->Almacenamiento
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_7" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_7" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Láser Dental</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Actualmente existen multitud de modelos de láser dental. En Clínica Dental Avilés y Román trabajamos con iLase™, gracias
+                                a este láser podemos realizar un gran conjunto de 24 procedimientos de la higiene y los tejidos blandos.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_8" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_8" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Sonda Florida</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Es muy importante llevar un seguimiento continuo para establecer un diagnóstico preciso en de las enfermedades periodontales
+                                y así conseguir mejores resultados en el tratamiento. La sonda Florida ejerce una presión constante y controlada (15g) que
+                                permite obtener una magnífica representación gráfica en un periodontograma con una presentación en formato audiovisual que
+                                aporta información clara y precisa del estado de salud periodontal. La sonda Florida Probe es una tecnología de última generación
+                                para tratar las enfermedades periodontales.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_9" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_9" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">OsseoCare Pro</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Este motor de fresado es el primero que permite usar un iPad a modo de interfaz como herramienta en la colocación de implantes
+                                dentales. La facilidad a la hora de planificar el proceso resulta de gran utilidad para el implantólogo, ya que el nivel
+                                se seguridad aumenta notablemente cuando usamos protocolos de fresado preprogramados, ya se trate de cirugía guiada o convencional.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_10" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_10" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Integracion total</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 En Clínica Dental Avilés y Román hemos diseñado nuestras instalaciones para lograr una perfecta integración de nuestros
+                                equipos de última generación. El uso conjunto de la radiología digital 3D, el escáner intraoral y el sistema Cerec inLab
+                                nos permite ofrecer soluciones y ventajas exclusivas, como los dientes en una hora, las rehabilitaciones orales completas
+                                en un solo día o la visualización del resultado final de un tratamiento de ortodoncia. Optimizamos nuestros recursos tecnológicos
+                                para mejorar el bienestar y la satisfacción de nuestros pacientes.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal_11" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_11" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h1 text-center">Ortodoncia Rápida</h2>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                             <p class="text-center">
+                                 Este moderno dispositivo aplica un sistema que, a través de suaves vibraciones y en tan sólo 20 minutos diarios, consigue
+                                acelerar el movimiento de los dientes que están recibiendo tratamiento con brackets, ortodoncia lingual o Invisalign.
+                             </p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JS, Popper.js y jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="landing2">
+
+        <!-- NAV -->
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
+                    alt="">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tratamientos 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Tratamientos 2
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tratamiento 1</a>
+                            <a class="dropdown-item" href="#">Tratamiento 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Tratamiento 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La clínica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ENG</a>
+                            <a class="dropdown-item" href="#">SPA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav--phone" href="tel: #">999 32 99 32</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /NAV -->
+
+        <!-- PAGE TITLE -->
+        <div class="page-title">
+            <h1>La clínica</h1>
+            <h2>Aviles Dental Clinic es un gran proyecto nacido de nuestra vocación por la odontología</h2>
+        </div>
+        <!-- /PAGE TITLE -->
+
+        <!-- LANDING2 HERO -->
+        <div class="container-fluid px-md-0">
+            <div class="flex-row-reverse landing2Hero--content">
+                <div class="col-md-6 video-right" style="background: linear-gradient(#4481eb, #35c2f2);">
+                    <img src="img/img.jpg" alt="Implantes dentales" width="100%">
+                    <a href="#">
+                        <img src="img/playbutton.png" width="100%">
+                    </a>
+                </div>
+                <div class="col-md-7 cards-left">
+                    <div class="flex-row-reverse d-flex align-items-center">
+                        <div class="col-md-5 cards-left--img">
+                            <img src="img/img.jpg" alt="Implantes dentales">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Quiénes somos</h3>
+                            <p>Conoce quiénes somos, explora nuestra historia y descubre nuestra filosofía de trabajo.</p>
+                            <button class="btn btn--white" data-target="#modal_1" data-toggle="modal">
+                                <i class="fa fa-plus"></i> Más información</button>
+                        </div>
+                    </div>
+                    <div class="flex-row-reverse d-flex align-items-center">
+                        <div class="col-md-5 cards-left--img">
+                            <img src="img/img.jpg" alt="Implantes dentales">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Instalaciones</h3>
+                            <p>Clínica Dental en Málaga con más de 1000m<sup>2</sup> con parking gratuito. ¡Visita nuestras instalaciones!</p>
+                            <a href="#" class="btn btn--white">
+                                <i class="fa fa-plus"></i> Más información</a>
+                        </div>
+                    </div>
+                    <div class="flex-row-reverse d-flex align-items-center">
+                        <div class="col-md-5 cards-left--img">
+                            <img src="img/img.jpg" alt="Implantes dentales">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Tecnología</h3>
+                            <p>¿Todavía crees que todas las clínicas dentales son iguales? Descubre la última tecnología aplicada al sector dental</p>
+                            <a href="#" class="btn btn--white">
+                                <i class="fa fa-plus"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /LANDING2 HERO -->
+
+        <!-- TIPOS -->
+        <div class="col-md-8 mx-auto my-5 text-center">
+            <h2>Responsabilidad Social Corporativa</h2>
+            <p>Además de dar los mejores tratamientos posibles a nuestros pacientes, en Avilés Dental Clinic ponemos nuestro granito de arena a la mejora de la sociedad</p>
+        </div>
+        <div class="container-fluid tipos">
+            <div class="row justify-content-center">
+                <div class="col-md-4 py-4">
+                    <div class="tiposCard" data-target="#modal_4" data-toggle="modal">
+                        <div>
+                            <h3>I+D+i</h3>
+                            <p>Investigación, Desarrollo e Innovación</p>
+                            <div class="btn-expend--container">
+                                <button class="btn btn-large btn-expend">
+                                    <i class="fa fa-plus"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="tiposCard" data-target="#modal_5" data-toggle="modal">
+                        <div>
+                            <h3>Sostenibilidad</h3>
+                            <p>Estamos comprometidos con el medio ambiente</p>
+                            <div class="btn-expend--container">
+                                <button class="btn btn-large btn-expend">
+                                    <i class="fa fa-plus"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="tiposCard" data-target="#modal_6" data-toggle="modal">
+                        <div>
+                            <h3>Solidaridad</h3>
+                            <p>Ayudamos a los más necesitados</p>
+                            <div class="btn-expend--container">
+                                <button class="btn btn-large btn-expend">
+                                    <i class="fa fa-plus"></i> Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /TIPOS -->
+
+        <!-- FORM -->
+        <div class="form--bg">
+            <div class="col-md-8 mx-auto py-5 text-center">
+                <h2>¿Hablamos?</h2>
+                <p>Déjanos tus datos y te atenderemos de forma personalizada lo antes posible</p>
+            </div>
+            <form onsubmit="$('#gracias').modal('show');" action="https://docs.google.com/forms/d/e/1FAIpQLSeSZ3UOF-cwrTozJJBN8p_Ucl2Sb_nLa6u0AT_bqc9XhCLwQg/formResponse"
+                target="no-target">
+                <div class="row contactform pb-4">
+                    <div class="col-md-6 col-12">
+                        <input name="entry.1199946029" type="text" id="nombre" autocomplete="given-name" required placeholder="Nombre" aria-label="Nombre">
+                        <input name="entry.249173692" type="text" id="apellidos" autocomplete="family-name" required placeholder="Apellidos" aria-label="Apellidos">
+                        <input name="emailAddress" type="email" id="email" autocomplete="email" required placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <input name="entry.659781189" type="tel" id="telefono" autocomplete="tel" placeholder="Teléfono" aria-label="Teléfono">
+                        <textarea class="descrip" rows="4" name="entry.1197895751" id="descripcion" placeholder="Descripción" aria-label="Descripción"></textarea>
+                        <p>Enviar este formulario supone la aceptación de nuestra
+                            <a href="#">política de privacidad</a>
+                        </p>
+                        <button type="submit" class="btn btn--blue float-right">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /FORM -->
+
+        <!-- MODAL1 -->
+        <div id="modal_1" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver</span>
+                        <h2 class="h1 text-center">La sedación</h2>
+                        <p class="h3 text-center">¿Para qué sirve?</p>
+                        <p class="text-center col-md-5 mx-auto mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt
+                            rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec quam quis tortor
+                            efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue dapibus, orci metus tincidunt
+                            tellus, vulputate porttitor risus odio a ex.</p>
+                        <img src="img/img2.jpg" width="100%">
+                        <div class="flex-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="h3">¿Para qué sirve?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris
+                                    tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec
+                                    quam quis tortor efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue
+                                    dapibus, orc metus tincidunt tellus, vulputate porttitor risus odio a ex.</p>
+                            </div>
+                            <div class="col-md-5 px-0 d-none d-md-block">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <div class="flex-row-reverse d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="h3">¿Para qué sirve?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris
+                                    tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec
+                                    quam quis tortor efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue
+                                    dapibus, orc metus tincidunt tellus, vulputate porttitor risus odio a ex.</p>
+                            </div>
+                            <div class="col-md-5 px-0 d-none d-md-block">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <img src="img/img2.jpg" width="100%">
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL1 -->
+
+        <!-- MODAL2 -->
+        <div id="modal_2" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver</span>
+                        <h2 class="h1 text-center">La sedación</h2>
+                        <p class="h3 text-center">¿Para qué sirve?</p>
+                        <p class="text-center col-md-5 mx-auto mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt
+                            rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec quam quis tortor
+                            efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue dapibus, orci metus tincidunt
+                            tellus, vulputate porttitor risus odio a ex.</p>
+                        <img src="img/img2.jpg" width="100%">
+                        <div class="flex-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="h3">¿Para qué sirve?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris
+                                    tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec
+                                    quam quis tortor efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue
+                                    dapibus, orc metus tincidunt tellus, vulputate porttitor risus odio a ex.</p>
+                            </div>
+                            <div class="col-md-5 px-0 d-none d-md-block">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL2 -->
+
+        <!-- MODAL3 -->
+        <div id="modal_3" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver</span>
+                        <h2 class="h1 text-center">La sedación</h2>
+                        <p class="h3 text-center">¿Para qué sirve?</p>
+                        <p class="text-center col-md-5 mx-auto mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris tincidunt
+                            rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec quam quis tortor
+                            efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue dapibus, orci metus tincidunt
+                            tellus, vulputate porttitor risus odio a ex.</p>
+                        <img src="img/img2.jpg" width="100%">
+                        <div class="flex-row-reverse d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="h3">¿Para qué sirve?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus quis mauris
+                                    tincidunt rutrum. Quisque vitae sem nec augue finibus suscipit in at risus. Aenean nec
+                                    quam quis tortor efficitur interdum commodo at turpis. Sed vestibulum, mauris non congue
+                                    dapibus, orc metus tincidunt tellus, vulputate porttitor risus odio a ex.</p>
+                            </div>
+                            <div class="col-md-5 px-0 d-none d-md-block">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL3 -->
+
+        <!-- MODAL4 -->
+        <div id="modal_4" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver
+                        </span>
+                        <h2 class="h1 text-center">I+D+i</h2>
+                        <p class="h3 text-center">Evolucionamos para ti</p>
+                        <p class="text-center col-md-10 mx-auto mb-3">La <strong>Clínica Dental Avilés y Román</strong> es un centro dental de investigación de referencia a nivel nacional.</p>
+                        <p class="text-center col-md-10 mx-auto mb-3">Gracias a la <strong>labor docente e investigadora universitaria del Dr. Román</strong> junto con la estrecha relación con las <strong>principales empresas fabricantes de productos dentales del Dr. Avilés</strong> se crea un vínculo entre universidad, fabricantes y clínica dental privada independiente,
+                        para así <strong>combinar la técnica con la ciencia</strong>.</p>
+                        <p class="text-center col-md-10 mx-auto mb-3">El Dr. Román <strong>colabora estrechamente con Invisalign</strong>, lo que le permite participar y conocer de primera mano las innovaciones a nivel mundial de la compañía. Por ejemplo, el Dr. Román participó en el desarrollo y presentación del <strong>Invisalign G3</strong>, la colección más importante de nuevas características e innovaciones en la historia de la compañía hasta la fecha.</p>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="text-center">Asimismo, el Dr. Pablo Avilés colabora íntimamente con Nobel Biocare en el campo de la rehabilitación oral completa ofreciendo cursos de formación en la técnica All-on-four y desarrollando productos exclusivos como el A&R Bridge.</p><p class="text-center">El objetivo final es ofrecer a nuestros pacientes los mejores tratamientos a través de las últimas novedades en el campo de la odontología,
+                                consiguiendo tratamientos más eficientes, mejores, cómodos y rápidos.</p>
+                            </div>
+                            <div class="col-md-5 px-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL4 -->
+
+        <!-- MODAL5 -->
+        <div id="modal_5" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver
+                        </span>
+                        <h2 class="h1 text-center">Sostenibilidad</h2>
+                        <p class="h3 text-center">Comprometidos con el medio ambiente</p>
+                        <p class="text-center col-md-10 mx-auto mb-3">En Avilés Dental Clinic nos preocupa el medio ambiente y la sostenibilidad del ecosistema y el entorno. Podemos presumir de que en nuestra clínica se hace un buen trabajo, <strong>promoviendo buenas prácticas para reducir el consumo de electricidad, agua y papel</strong>, así como para realizar una correcta separación de los residuos.</p>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <ul>
+                                    <li><strong>Sin papel :</strong> Nuestra clínica está completamente digitalizada, intentando reducir al máximo el consumo de papel y tóner. Todo el papel que usamos es reciclado y, por supuesto, reciclamos todos el papel que ya no necesitamos.</li>
+                                    <li><strong>Eficiencia energética :</strong> Nuestros sistemas de iluminación y equipos informáticos son de bajo consumo</li>
+                                    <li><strong>Bioseguridad :</strong> Nuestros equipos radiológicos son de última generación y cumplen las más exigentes normaticas de bioseguridad y eficiencia energética (ISO 9001, ISO 13485). También apoyamos la norma de gestión ambiental ISO 14001.</li>
+                                    <li><strong>CO<sub>2</sub> :</strong> Nos comprometemos con la reducción de nuestra huella de carbono, contando con equipos de alto rendimiento, ajardinando nuestra zona de aparcamiento e acudiendo a la clínica andando o en transporte público.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL5 -->
+
+        <!-- MODAL6 -->
+        <div id="modal_6" class="modal fade ancha" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <span data-dismiss="modal" class="btn btn--white float-right m-2">
+                            <i class="fa fa-times"></i> Volver
+                        </span>
+                        <h2 class="h1 text-center">Solidaridad</h2>
+                        <p class="h3 text-center">Nos preocupamos por los más necesitados</p>
+                        <p class="text-center col-md-10 mx-auto mb-3">Somos conscientes de que en nuestra sociedad hacen falta iniciativas privadas de cooperación y ayuda para el bienestar social. Por ello, en Clínica Dental Avilés y Román <strong>queremos poner nuestro granito de arena para conseguir un mundo mejor</strong>.</p>
+                        <div class="flex-column-reverse flex-md-row d-flex align-items-center justify-content-center">
+                            <div class="col-md-5">
+                                <p class="text-center">Colaboramos con <strong>diversas organizaciones sin ánimo de lucro y asociaciones de ayuda a personas y animales</strong> con donaciones económicas, cediendo material sanitario, ofreciendo tratamientos a coste reducido a través de cursos de formación y colaborando directamente con hospitales malagueños en casos especiales y con la asociación Madre Coraje.</p>
+                            </div>
+                            <div class="col-md-5 px-0 mb-4 mb-md-0">
+                                <img src="img/img.jpg" width="100%">
+                            </div>
+                        </div>
+                        <button data-dismiss="modal" class="btn btn--white mx-auto my-5 d-block">
+                            <i class="fa fa-times"></i> Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL6 -->
+
+        <!-- Bootstrap JS, Popper.js y jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>
